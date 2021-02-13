@@ -1,5 +1,3 @@
-import java.util.Iterator;
-
 public class WishListIterator implements Iterator {
     private Item[] items;
     private int position;
