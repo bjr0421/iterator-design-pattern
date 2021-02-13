@@ -3,7 +3,6 @@
  * @author Brooks Robinson
  */
 public class WishList {
-
     private String name;
     private Item[] items;
     private int count;
@@ -24,7 +23,6 @@ public class WishList {
      * @param price price of the item
      */
     public void addItem(String title, String description, double price) {
-
         Item anItem = new Item(title, description, price);
 
         if (count > 4) {
@@ -40,9 +38,7 @@ public class WishList {
      * @return a new iterator for the WishList array of items
      */
     public WishListIterator createIterator() {
-
         return new WishListIterator(items);
-
     }
 
     /** 
@@ -69,6 +65,5 @@ public class WishList {
             bigArray[i] = items[i];
         }
         return bigArray;
-    }
-    
+    }  
 }

@@ -3,7 +3,6 @@
  * @author Brooks Robinson
  */
 public class Item {
-    
     private String title;
     private String description;
     private double price;
@@ -15,11 +14,9 @@ public class Item {
      * @param price price of the item
      */
     public Item(String title, String description, double price) {
-     
         this.title = title;
         this.description = description;
         this.price = price;
-
     }
 
     /**
@@ -27,9 +24,7 @@ public class Item {
      * @return price, description, and title of the item
      */
     public String toString() {
-
         return "Title: " + title + "\nDescription: " + description + "\nPrice: " + price;
-
     }
 
     /**
@@ -37,20 +32,15 @@ public class Item {
      * @return price of the item
      */
     public double getPrice() {
-
         return price;
-
     }
 
     /**
      * Prints the properties of the item in a formatted manner
      */
     public void print() {
-        
         System.out.println("\n***** " + title + " *****");
         System.out.println(description);
         System.out.println("Price: $" + price);
-
     }
-
 }
