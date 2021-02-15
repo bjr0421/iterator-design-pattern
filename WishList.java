@@ -25,7 +25,7 @@ public class WishList {
     public void addItem(String title, String description, double price) {
         Item anItem = new Item(title, description, price);
 
-        if (count > 4) {
+        if (count == items.length) {
             growArray(items);
         }
 
